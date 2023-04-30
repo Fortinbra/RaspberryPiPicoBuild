@@ -6,7 +6,6 @@ runs:
   steps:
     - name: arm-none-eabi-gcc GNU Arm Embedded Toolchain
       uses: carlosperate/arm-none-eabi-gcc-action@v1.5.2
-      shell: bash
     - name: Checkout pico-sdk/1.5.0
       uses: actions/checkout@v3
       with:
