@@ -6,11 +6,11 @@ runs:
   steps:
     - name: arm-none-eabi-gcc GNU Arm Embedded Toolchain
       uses: carlosperate/arm-none-eabi-gcc-action@v1.8.1
-    - name: Checkout pico-sdk/1.5.1
+    - name: Checkout pico-sdk/2.0.0
       uses: actions/checkout@v4.1.1
       with:
         repository: raspberrypi/pico-sdk
-        ref: 1.5.1
+        ref: 2.0.0
         path: pico-sdk
     - name: Checkout pico-sdk submodules
       working-directory: ${{github.workspace}}/pico-sdk
